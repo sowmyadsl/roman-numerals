@@ -1,12 +1,14 @@
-# Roman Numerals
-#### This is a brief description of what the software does.
-#### By Author
+# Roman Numerals using arrays and jquery
+#### A western numeral to roman numeral conversion app.
+#### By Sean Pierce and Sowmya Dinavahi
 ## Description
-This a a more detailed description of what the software does. Be specific and leave nothing to chance. This is a good place to really inform the user about your code.
+We created a web based page to check for users to enter a number between 1-3999 (this is highest possible roman numeral can go) and convert them into roman numeral using conditional statements and jquery.
+
 ## Setup/Installation Requirements
-* list item 1
-* list item 2
-* list item 3
+* Clone or download repo
+* Open index.html on the browser
+* Or visit https://seanpierce.github.io/roman-numerals/
+
 ## Specs
 * The program will check if the user entered either a 1 or 5, and display corresponding Roman Numerals
    * **Input**: 1
@@ -27,13 +29,15 @@ This a a more detailed description of what the software does. Be specific and le
    * **Input**: 2017
    * **Output**: MMXVII
 ## Known Bugs
-List known bugs or issues here
+No bugs as of now.
 ## Technologies Used
-* Tech 1
-* Tech 2
-* Tech 3
+* HTML
+* CSS
+* bootstrap
+* javaScript
+* jQuery
 ## Support and contact details
-_contact info here_
+Feel free to contact sumler.sean@gmail.com or sowmya.dsl@gmail.com
 ### License
 _MIT_
-Copyright (c) _year_ **Author or Organization**
+Copyright (c) 2017 Sowmya Dinavahi and Sean Pierce

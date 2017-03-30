@@ -1,3 +1,4 @@
+//Business logic
 var firstPlace = ["-", "I", "II", "III","IV","V","VI","VII","VIII","IX"]; //0-9
 var secondPlace = ["-","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"];   //10-100
 var thirdPlace = ["-","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"];    //100-1000
@@ -47,15 +48,14 @@ var convert = function(input){
 
   }
 
-  // join numerals from array to a string
+// join numerals from array to a string
   var joinedRoman = romanOutput.reverse().join("");
   alert(joinedRoman.replace(/-/g, ""));
 }
 
 
 
-
-
+//user-inteface logic
 $(document).ready(function(){
 $(".form1").submit(function(event){
   event.preventDefault();
