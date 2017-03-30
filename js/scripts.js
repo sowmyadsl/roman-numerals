@@ -9,20 +9,20 @@ var convert = function(input){
   var romanOutput = [];
   // split input
   var splitInput = input.split("");
-
+  var inputLength = splitInput.length;
   // check if number is 1, 2, 3, 4 digits
-  if (splitInput.length === 1) {
+  if (inputLength === 1) {
     var fp = splitInput[0];
     var fpRoman = firstPlace[fp];
     romanOutput.push(fpRoman);
-  } else if (splitInput.length === 2) {
+  } else if (inputLength.length === 2) {
     var fp = splitInput[1];
     var fpRoman = firstPlace[fp];
     var sp = splitInput[0];
     var spRoman = secondPlace[sp];
     romanOutput.push(fpRoman);
     romanOutput.push(spRoman);
-  } else if (splitInput.length === 3) {
+  } else if (inputLength === 3) {
     var fp = splitInput[2];
     var fpRoman = firstPlace[fp];
     var sp = splitInput[1];
@@ -32,7 +32,7 @@ var convert = function(input){
     romanOutput.push(fpRoman);
     romanOutput.push(spRoman);
     romanOutput.push(tpRoman);
-  }else if (splitInput.length === 4) {
+  } else if (inputLength === 4) {
     var fp = splitInput[3];
     var fpRoman = firstPlace[fp];
     var sp = splitInput[2];
@@ -50,7 +50,7 @@ var convert = function(input){
 
 // join numerals from array to a string
   var joinedRoman = romanOutput.reverse().join("");
-  alert(joinedRoman.replace(/-/g, ""));
+  return joinedRoman.replace(/-/g, "");
 }
 
 
@@ -60,6 +60,6 @@ $(document).ready(function(){
 $(".form1").submit(function(event){
   event.preventDefault();
   var userInput =$("#user-input").val();
-  convert(userInput);
+  $("#output").text(userInput + " will be: " + convert(userInput));
 });
 });
