@@ -15,7 +15,7 @@ var convert = function(input){
     var fp = splitInput[0];
     var fpRoman = firstPlace[fp];
     romanOutput.push(fpRoman);
-  } else if (inputLength.length === 2) {
+  } else if (inputLength === 2) {
     var fp = splitInput[1];
     var fpRoman = firstPlace[fp];
     var sp = splitInput[0];
