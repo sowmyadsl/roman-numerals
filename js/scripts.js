@@ -49,7 +49,7 @@ var convert = function(input){
 
   // join numerals from array to a string
   var joinedRoman = romanOutput.reverse().join("");
-  alert(joinedRoman);
+  alert(joinedRoman.replace(/-/g, ""));
 }
 
 

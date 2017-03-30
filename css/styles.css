@@ -1,0 +1,9 @@
+img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+input, button {
+  height: 2em;
+  width: 200px;
+}
